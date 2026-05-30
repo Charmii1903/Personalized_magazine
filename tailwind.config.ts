@@ -1,8 +1,8 @@
 import type { Config } from 'tailwindcss'
-import { fontFamily } from 'tailwindcss/defaultConfig'
+
 
 const config: Config = {
-  darkMode: ['class'],
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,11 +11,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-poppins)', 'var(--font-inter)', ...fontFamily.sans],
-        display: ['var(--font-playfair)', 'var(--font-cormorant)', ...fontFamily.serif],
-        serif: ['var(--font-cormorant)', ...fontFamily.serif],
-        mono: ['var(--font-mono)', ...fontFamily.mono],
-      },
+  display: ['var(--font-playfair)'],
+  sans: ['var(--font-poppins)'],
+  body: ['var(--font-inter)'],
+  serif: ['var(--font-cormorant)'],
+},
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

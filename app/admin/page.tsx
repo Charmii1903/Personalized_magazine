@@ -278,7 +278,7 @@ export default function AdminDashboard() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-8 border border-primary/20 text-center"
+          className="bg-linear-to-r from-primary/10 to-accent/10 rounded-lg p-8 border border-primary/20 text-center"
         >
           <MessageSquare className="mx-auto mb-4 text-primary" size={32} />
           <h3 className="text-xl font-display font-bold text-foreground mb-2">
