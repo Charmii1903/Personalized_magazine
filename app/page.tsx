@@ -10,7 +10,8 @@ import { FAQSection } from '@/components/faq-section'
 import { ContactSection } from '@/components/contact-section'
 import { Footer } from '@/components/footer'
 import { useTrackVisitor } from '@/hooks/use-track-visitor'
-// import GoogleAnalytics from '@/components/GoogleAnalytics'
+import { Analytics } from "@vercel/analytics/next"
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export default function Home() {
   useTrackVisitor('/')
@@ -24,7 +25,8 @@ export default function Home() {
       <PortfolioSection />
       <FAQSection />
       <ContactSection />
-      {/* <GoogleAnalytics /> */}
+      <Analytics />
+      <GoogleAnalytics />
       <Footer />
     </main>
   )
