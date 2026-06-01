@@ -552,7 +552,7 @@ export function ContactSection() {
               </div>
 
               {/* WhatsApp */}
-              <div className="card-premium p-6">
+              {/* <div className="card-premium p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                     <Phone className="w-6 h-6 text-primary" />
@@ -574,7 +574,7 @@ export function ContactSection() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
 
@@ -775,7 +775,6 @@ export function ContactSection() {
                   required
                   suppressHydrationWarning
                   className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none"
-                  placeholder="+91 98765 43210"
                 />
               </div>
 

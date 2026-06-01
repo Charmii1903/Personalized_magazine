@@ -60,12 +60,6 @@ const [errorMessage, setErrorMessage] = useState('')
       href: 'mailto:memoriesandall19@gmail.com',
       label: 'Email',
     },
-
-    {
-      icon: FaWhatsapp,
-      href: 'https://wa.me/918735868566',
-      label: 'WhatsApp',
-    },
   ]
 
   const handleNewsletterSubmit = async (
