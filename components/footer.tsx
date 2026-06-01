@@ -60,6 +60,11 @@ const [errorMessage, setErrorMessage] = useState('')
       href: 'mailto:memoriesandall19@gmail.com',
       label: 'Email',
     },
+    {
+      icon: Instagram,
+      href: 'https://www.instagram.com/magazine_and_all?igsh=YzhoYXdudWZxMDdt',
+      label: 'Instagram',
+    },
   ]
 
   const handleNewsletterSubmit = async (
@@ -148,30 +153,34 @@ const [errorMessage, setErrorMessage] = useState('')
               </p>
 
               {/* Social Icons */}
-              <div className="flex gap-3">
-                {socialLinks.map((social, index) => {
-                  const Icon = social.icon
+<div className="flex items-center gap-4 mt-4">
+  {socialLinks.map((social, index) => {
+    const Icon = social.icon
 
-                  return (
-                    <motion.a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      initial={{ opacity: 0, y: 10 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      whileHover={{ scale: 1.2, rotate: 360 }}
-                      suppressHydrationWarning
-                      className="w-10 h-10 rounded-full bg-background/20 flex items-center justify-center hover:bg-primary transition-colors"
-                      aria-label={social.label}
-                    >
-                      <Icon className="w-5 h-5" />
-                    </motion.a>
-                  )
-                })}
-              </div>
+    return (
+      <motion.a
+        key={social.label}
+        href={social.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: index * 0.1 }}
+        whileHover={{
+          scale: 1.15,
+          y: -3,
+        }}
+        whileTap={{ scale: 0.95 }}
+        suppressHydrationWarning
+        className="group w-11 h-11 rounded-full border border-background/20 bg-background/10 backdrop-blur-md flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300 shadow-md"
+        aria-label={social.label}
+      >
+        <Icon className="w-5 h-5 text-background group-hover:text-white transition-colors" />
+      </motion.a>
+    )
+  })}
+</div>
             </motion.div>
 
             {/* Footer Links */}
