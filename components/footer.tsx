@@ -62,7 +62,7 @@ const [errorMessage, setErrorMessage] = useState('')
     },
     {
       icon: Instagram,
-      href: 'https://www.instagram.com/magazine_and_all?igsh=YzhoYXdudWZxMDdt',
+      href: 'https://www.instagram.com/memoriess_and_all?utm_source=qr&igsh=YzhoYXdudWZxMDdt',
       label: 'Instagram',
     },
   ]
